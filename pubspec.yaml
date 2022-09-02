@@ -15,6 +15,10 @@ dependencies:
     git: https://github.com/yhfworking/f_yc_utils.git
   f_yc_config:
     git: https://github.com/yhfworking/f_yc_config.git
+  f_yc_widgets:
+    git: https://github.com/yhfworking/f_yc_widgets.git
+  f_yc_pages:
+    git: https://github.com/yhfworking/f_yc_pages.git
   fluwx_no_pay: ^3.9.0
   fl_baidu_mob_stat: ^1.3.0
   app_tracking_transparency: ^2.0.2+4

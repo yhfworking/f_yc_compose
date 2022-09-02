@@ -1,5 +1,6 @@
 import 'package:f_yc_config/f_yc_config.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
+import 'package:f_yc_widgets/f_yc_widgets.dart';
 
 class YcVersionUpgrade {
   static Future<void> check() async {
@@ -16,13 +17,13 @@ class YcVersionUpgrade {
           version.isNotEmpty) {
         if (await StringUtils.isLessCompareVersion(version)) {
           if (!Get.isDialogOpen!) {
-            // Get.dialog(
-            //     WidgetsVersionUpgrade(
-            //       title: title,
-            //       note: note,
-            //       url: url,
-            //     ),
-            //     barrierDismissible: false);
+            Get.dialog(
+                WidgetsVersionUpgrade(
+                  title: title,
+                  note: note,
+                  url: url,
+                ),
+                barrierDismissible: false);
           }
         }
       }
