@@ -7,4 +7,5 @@ export 'src/connectivity/yc_connectivity.dart';
 export 'src/share/yc_share.dart';
 export 'src/version_upgrade/yc_version_upgrade.dart';
 export 'src/wechat/yc_wechat.dart';
+export 'src/policy_privacy/yc_policy_privacy.dart';
 export 'package:fluwx_no_pay/fluwx_no_pay.dart';
