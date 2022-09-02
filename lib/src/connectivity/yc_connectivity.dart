@@ -6,11 +6,11 @@ class YcConnectivity {
     ConnectivityResult connectivityResult =
         await (Connectivity().checkConnectivity());
     if (connectivityResult == ConnectivityResult.none) {
-      Get.dialog(const WidgetsNetworkTips(), barrierDismissible: false);
+      // Get.dialog(const WidgetsNetworkTips(), barrierDismissible: false);
     }
     Connectivity().onConnectivityChanged.listen((event) {
       if (event == ConnectivityResult.none) {
-        Get.dialog(const WidgetsNetworkTips(), barrierDismissible: false);
+        // Get.dialog(const WidgetsNetworkTips(), barrierDismissible: false);
       } else {
         Get.until((route) {
           return (Get.isDialogOpen != null && Get.isDialogOpen == false);

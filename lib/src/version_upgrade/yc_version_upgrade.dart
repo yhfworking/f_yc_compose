@@ -16,13 +16,13 @@ class YcVersionUpgrade {
           version.isNotEmpty) {
         if (await StringUtils.isLessCompareVersion(version)) {
           if (!Get.isDialogOpen!) {
-            Get.dialog(
-                WidgetsVersionUpgrade(
-                  title: title,
-                  note: note,
-                  url: url,
-                ),
-                barrierDismissible: false);
+            // Get.dialog(
+            //     WidgetsVersionUpgrade(
+            //       title: title,
+            //       note: note,
+            //       url: url,
+            //     ),
+            //     barrierDismissible: false);
           }
         }
       }
