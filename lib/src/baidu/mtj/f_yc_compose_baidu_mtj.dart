@@ -2,7 +2,7 @@ import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:fl_baidu_mob_stat/fl_baidu_mob_stat.dart';
 import 'package:flutter/foundation.dart';
 
-class YcBaiduMtj {
+class FYcComposeBaiduMtj {
   static Future<void> init(
       {required String androidAppKey, required String iosAppKey}) async {
     final bool isInit = await FlBaiduMobStat()
@@ -10,9 +10,9 @@ class YcBaiduMtj {
     await FlBaiduMobStat().setAppChannel('Flutter');
     if (kDebugMode) {
       if (isInit) {
-        LoggerUtils.write('百度统计初始化成功！');
+        FYcLogger.write('百度统计初始化成功！');
       } else {
-        LoggerUtils.write('百度统计初始化失败！');
+        FYcLogger.write('百度统计初始化失败！');
       }
     }
   }

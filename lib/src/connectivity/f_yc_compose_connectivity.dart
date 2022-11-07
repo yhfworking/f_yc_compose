@@ -1,8 +1,7 @@
-import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:f_yc_utils/f_yc_utils.dart';
 import 'package:f_yc_widgets/f_yc_widgets.dart';
 
-class YcConnectivity {
+class FYcComposeConnectivity {
   static Future<void> checkNetwork() async {
     ConnectivityResult connectivityResult =
         await (Connectivity().checkConnectivity());

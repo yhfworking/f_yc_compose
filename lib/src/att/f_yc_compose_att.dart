@@ -1,6 +1,6 @@
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 
-class YcAppTrackingTransparency {
+class FYcComposeAtt {
   static Future<void> requestAtt() async {
     if (await AppTrackingTransparency.trackingAuthorizationStatus ==
         TrackingStatus.notDetermined) {
