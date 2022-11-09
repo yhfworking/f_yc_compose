@@ -28,8 +28,8 @@ dependencies:
     git: https://github.com/yhfworking/f_yc_widgets.git
   f_yc_entity:
     git: https://github.com/yhfworking/f_yc_entity.git
-  # f_yc_pages:
-  #   git: https://github.com/yhfworking/f_yc_pages.git
+  f_yc_pages:
+    git: https://github.com/yhfworking/f_yc_pages.git
 
 dev_dependencies:
   flutter_test:

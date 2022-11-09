@@ -24,6 +24,9 @@ class FYcComposeVersionUpgrade {
                   title: title,
                   note: note,
                   url: url,
+                  upgradeEvent: () {
+                    Get.back();
+                  },
                 ),
                 barrierDismissible: false);
           }
