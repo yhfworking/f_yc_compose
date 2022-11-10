@@ -1,13 +1,21 @@
+import 'dart:developer';
+
 import 'package:f_yc_compose/f_yc_compose.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 class FYcComposeWechat {
   static Future<void> init(String wxAppId, String wxUniversalLink) async {
-    await registerWxApi(
+    bool isSuccess = await registerWxApi(
         appId: wxAppId,
         doOnAndroid: true,
         doOnIOS: true,
         universalLink: wxUniversalLink);
+    if (kDebugMode) {
+      if (isSuccess) {
+        log('---微信工具初始化成功---');
+      }
+    }
   }
 
   static void shareAppToWxSession() {
